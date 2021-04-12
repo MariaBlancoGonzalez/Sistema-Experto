@@ -1,0 +1,178 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx} % graficos
+\usepackage{amsmath}
+\begin{document}
+	
+	\begin{titlepage}
+		
+		\begin{center}
+			\vspace*{-1in}
+			\begin{figure}[htb]
+				\begin{center}
+					\includegraphics[width=8cm]{Imagen.jpeg}
+				\end{center}
+			\end{figure}
+		
+			\vspace*{0.15in}
+			\begin{Large}
+				\begin{center}
+					\textbf{SISTEMA DE AYUDA AL DIAGNÓSTICO DE
+TRASTORNOS DEL DESARROLLO EN
+ENTORNOS ESCOLARES}
+				\end{center}
+			\end{Large}
+			\vspace*{0.3in}
+			\begin{large}
+				ESCUELA SUPERIOR DE INFORMÁTICA\\
+			\end{large}
+			\vspace*{0.3in}
+			\rule{150mm}{0.1mm}\\
+			\vspace*{0.6in}
+			\begin{large}
+				\begin{flushleft}
+					{\normalsize Asignatura: Sistemas Basados en el Conocimiento}
+				\end{flushleft}
+				\begin{flushleft}
+					{\normalsize Autores: María Blanco González-Mohino\\} 
+				\end{flushleft}
+				\begin{flushleft}
+					{\normalsize Fecha: 06 de Abril de 2021}
+				\end{flushleft}
+			\end{large}
+		\end{center}
+		\end{titlepage}
+		\tableofcontents
+		\newpage
+
+\section{Aquisición de conocimiento}
+	En este archivo solo se muestra la información obtenido a partir de la entrevista 1 hacia un docente del C.E.I.P Albuera (Daimiel), iteración número 1.
+	
+	\subsection{Recopilación de la primera entrevista}
+\section{Conceptualización}
+A continuación se mostrarán los términos más revelantes así como las
+relaciones entre ellos. En este apartado se incluirá un glosario con conceptos claves, una tabla objeto-atributo-valor en la que se incluirán los distinto valores que un comportamiento puede adoptar. A parte también se incluira el mapa de conocimiento según el razonamiento del experto.
+\subsection{Glosario}
+\begin{flushleft}
+\textbf{\textit{Lista de elementos y definiciones}}
+
+\textit{1 - Etapa gráfica:} se trata de las etapas universales que presentan los niños de diferentes culturas. Estas etapas son: etapa del garabateo (2-4 años), etapa pre esquemática (4-7 años), etapa esquemática (7-9 años), etapa del realismo (9 y 12 años), etapa pseudonaturalista (12-14 años). \\
+\textit{2 - Retraso psicoevolutivo: }Segun Piaget, el desarrollo psicoevolutivo son los distintos cambios por el que el niño pasa desde su nacimiento a nivel físico, cognitivo, lingüístico y socio-emocional. \\
+\textit{3 - Motricidad gruesa:} Actividades y movimientos que los niños realizan utilizando los grandes grupos musculares, involucrando las extremidades inferiores, superiores y los movimientos de la cabeza. \\
+\textit{4 - Ecolalia:} Repetición involuntaria de palabras o frases. \\
+\textit{5 - Etapa de renacuajo:} Etapa encontrada dentro de la etapa gráfica preesquemática, en la que el niño es capaz de dibujar un círculo y elementos que salen de este, siendo estos, normalmente, partes del cuerpo. \\
+\textit{6 - Borderline:} Termino utilizado por los expertos para definir a un niño próximo a la deficiencia.\\
+\textit{7 - Juego simbólico:} Actividad en la que los niños utilizan su capacidad mental para recrear un escenario. Por ejemplo: algunos niños son doctores y otros pacientes.\\
+
+\textbf{\textit{Relaciones entre elementos}}\\
+6 pertenece a 1. (Etapa de renocuajo - Etapa gráfica) \\
+2 precedente a 7. (Retraso psicoevolutivo - Juego simbólico)\\
+
+\textbf{\textit{Elementos no preocupantes}} \\
+Si el niño presenta evolución aunque esta sea lenta. (No confundir con
+Borderline) \\
+\end{flushleft}
+\subsection{Diccionario de conceptos}
+\subsubsection{Tabla Objeto-Atributo-Valor}
+En la tabla objeto-atributo-valor se encuentran recogidos los conceptos
+del dominio del sistema, los atributos que los caracterizan y los posibles valores que los atributos pueden tomar.
+\subsubsection{Mapa de conocimientos}
+El mapa de conocimientos nos permite establecer las relaciones entre los
+distintos conceptos y la estructura del razonamiento del experto.
+En el mapa podemos observar como el experto le realiza pruebas de comportamiento al niño como llamarlo desde atras para comprobar su sistema auditivo, comprobación de la focalización ya mencionada, entre otras. Con esta serie de características el experto realiza una hipótesis, lo llamado ’Diagnóstico heurístico’. A la par de está realización el experto rellena la escala de observación aprobada por el inspector; con estos dos ’diagnósticos’ se procede a la elección para su posterior elevación del caso al psicólogo y padres.
+\subsubsection{Ontología}
+*La sección de ontologías se creará en la segunda iteración ya que se rea-
+lizara después de un cuestionario a los diferentes docentes del centro por lo que se verificará que el conocimiento está aceptado por el grupo de personas que utilizará el sistema.
+\section{Representación del conocimiento}
+Para la reprensatción del conocimiento de este sistema experto se utiliza
+un razonamiento hacia delante basado en reglas, razonamiento basado en
+lógica. A continuación se indican las diferentes reglas extraidas mediante las diferentes técnicas de adquisición de conocimiento empleadas: \\
+
+\begin{center}
+\begin{tabular}{|c|}
+\hline 
+\textbf{Regla 1} \\ 
+Si el niño no focaliza, — nf \\
+siente atracción por el vacío, — av \\
+no presenta juego simbólico, — njs \\
+sus emociones se encuentran alteradas, — ea \\
+y no presenta empatía, — ne \\ 
+Entonces el niño presenta un trastorno autista. — autista \\
+\hline 
+\end{tabular} 
+\end{center}
+\begin{center}
+\begin{tabular}{|c|}
+\hline 
+ \textbf{Regla 2:} \\
+Si el niño no comprende a la edad de 4 años, — nc \\
+no presenta juego simbólico, — njs \\
+no adquiere los conocimietos correspondientes a esa edad, — nce\\
+se encuentra estancado en la etapa del renacuajo, — er\\
+no retiene información, — nr \\
+no imita, — ni \\
+su vocabulario es menor a 2000 palabras, — mp \\
+su motricidad gruesa se encuentra alterada, — mg \\
+entonces el niño presenta deficiencia cognitiva — deficiencia\\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|}
+\hline 
+\textbf{Regla 3:} \\
+Si el niño tiene dificultad para resolver problemas sencillos, — nps\\
+su motricidad gruesa se encuentra algo alterada, — mg\\
+presenta ecolalia, — e\\
+sus emociones se encuentras algo alteradas, — ea\\
+entonces el niño presenta un trastorno borderline. — borderline \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Nota: a la derecha de cada comportamiento se encuentra la abreviatura que
+se empleará más adelante. \\
+
+Acto seguido podemos ver el ciclo empleado para la obtención de un
+diagnóstico así como un ejemplo utilizando las reglas pertenecientes a la correspondiente base de conocimiento: \\
+
+\begin{center}
+\begin{tabular}{|p{15cm}|}
+\hline 
+\textbf{Paso 1:} comprobamos los comportamientos que se presentan y verificamos las posibles reglas que pueden darse,teniendo en cuenta que si hay 3 comportamientos adversos por regla esta no se podrá disparar, si estas condiciones se dan en más de una regla se elegirá la primera por posición. \\
+\textbf{Paso 2:} disparamos la regla que tenga más trastornos asociados y borramos el conjunto de reglas posibles.\\
+\textbf{Paso 3:} añadimos comportamiento a la memoria de trabajo. \\
+\textbf{Paso 4:} Retornamos a paso 1 hasta que los comportamientos expresados solo puedan asociarse a una regla.\\
+\textbf{Paso 5:} seleccionar regla y acabar las iteraciones. \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Ejemplo: \\
+
+\begin{tabular}{|c|l{7cm}|c|c|}
+\hline 
+Iteración & Memoria de trabajo & Reglas posibles & Regla disparada \\ 
+\hline 
+0 & njs, ea, e & 1,2,3 & 1 \\ 
+\hline 
+1 & njs, ea, e, mg & 1,2,3 & 1 \\ 
+\hline 
+2 & njs, ea, e, mg, f & 2,3 & 2 \\ 
+\hline 
+3 & njs, ea, e, mg, f, mg & 2,3 & 2 \\ 
+\hline 
+4 & njs, ea, e, mg, f, mg, nps, np & 3 & 3 \\ 
+\hline 
+5 & njs, ea, e, mg, f, mg, nps, np, \textbf{borderline} & • & PARAR \\ 
+\hline 
+\multicolumn{4}{|c|}{f: focaliza PARAR: se para cuando no hay conjuntos que suponen un conflicto} \\ 
+\hline 
+\end{tabular} \\
+
+Se muestra un razonamiento hacia delante (\textit{forward}) basado en reglas.
+\end{document}
