@@ -306,10 +306,207 @@
     (assert(derivar AL))
 )
 
-;; DEFICIENCIA COGNITIVA
+;;;;;;;;;;;;; TEA ;;;;;;;;;;;;;;;;;
+(defrule regla_45
+    (creencia tea)
+    (lenguaje hace_uso_lenguaje)
+=> 
+    (assert(comprobar flexibilidad_cognitiva))
+)
+
+(defrule regla_46
+    (creencia tea)
+    (lenguaje no_hace_uso_lenguaje)
+=> 
+    (assert(comprobar flexibilidad_cognitiva_2))
+)
+
+(defrule regla_47
+    (comprobar flexibilidad_cognitiva)
+    (flexibilidad_cognitiva no_alterada)
+=>
+    (assert(comprobar interaccion_entorno))
+)
+
+(defrule regla_48
+    (comprobar flexibilidad_cognitiva)
+    (flexibilidad_cognitiva alterada)
+=>
+    (assert(consejo "puede ser"))
+)
+
+(defrule regla_49
+    (comprobar interaccion_entorno)
+    (interaccion_entorno interacciona)
+=>
+    (assert(comprobar mirada_perdida))
+)
+
+(defrule regla_50
+    (comprobar interaccion_entorno)
+    (interaccion_entorno no_interacciona)
+=> 
+    (assert(comprobar mirada_perdida_2))
+)
+
+(defrule regla_51
+    (comprobar mirada_perdida)
+    (mirada_perdida si)
+=> 
+    (assert(comprobar reaccion_cambio_rutina))
+)
+
+(defrule regla_52
+    (comprobar mirada_perdida)
+    (mirada_perdida no)
+=> 
+    (assert(comprobar emociones_irregulares_6))
+)
+
+(defrule regla_53 
+    (comprobar reaccion_cambio_rutina)
+    (cambio_rutina buena_reaccion)
+=>
+    (assert(derivar AL))
+)
+
+(defrule regla_54 
+    (comprobar reaccion_cambio_rutina)
+    (cambio_rutina mala_reaccion)
+=>
+    (assert(consejo "muy posible caso de tea"))
+)
+
+(defrule regla_55
+    (comprobar emociones_irregulares_6)
+    (emociones irregulares)
+=>
+    (assert(derivar AL))
+)
+
+(defrule regla_56
+    (comprobar emociones_irregulares_6)
+    (emociones no_irregulares)
+=>
+    (assert(trastorno "niño no trastorno tea"))
+)
+
+(defrule regla_57
+    (comprobar mirada_perdida_2)
+    (mirada_perdida si)
+=>
+    (assert(comprobar emociones_irregulares_7))
+)
+
+(defrule regla_58
+    (comprobar mirada_perdida_2)
+    (mirada_perdida no)
+=>
+    (assert(comprobar emociones_irregulares_8))
+)
+
+(defrule regla_59
+    (comprobar emociones_irregulares_7)
+    (emociones irregulares)
+=>
+    (assert(comprobar empatia))
+)
+
+(defrule regla_60
+    (comprobar emociones_irregulares_7)
+    (emociones no_irregulares)
+=>
+    (assert(trastorno "el niño esta bien"))
+)
+
+(defrule regla_61
+    (comprobar empatia)
+    (empatia si_tiene)
+=> 
+    (assert(consejo "vigilar por posible caso tea"))
+)
+
+(defrule regla_62
+    (comprobar empatia)
+    (empatia no_tiene)
+=>
+    (assert(derivar AL))
+)
+
+(defrule regla_63
+    (comprobar emociones_irregulares_8)
+    (emociones irregulares)
+=>
+    (assert(consejo "vigilar por posible caso de tea"))
+)
+
+(defrule regla_64
+    (comprobar emociones_irregulares_8)
+    (emociones no_irregulares)
+=>
+    (assert(trastorno "vigilar por posible caso de tea"))
+)
+
+(defrule regla_65
+    (comprobar flexibilidad_cognitiva_2)
+    (flexibilidad_cognitiva no_alterada)
+=>
+    (assert(comprobar interaccion_entorno_2))
+)
+
+(defrule regla_66
+    (comprobar flexibilidad_cognitiva_2)
+    (flexibilidad_cognitiva alterada)
+=>
+    (assert(trastorno "Posible caso de TEA"))
+)
 
 
+(defrule regla_67
+    (comprobar interaccion_entorno_2)
+    (interaccion_entorno no_interacciona)
+=> 
+    (assert(comprobar mirada_perdida_3))
+)
 
+(defrule regla_68
+    (comprobar interaccion_entorno_2)
+    (interaccion_entorno interacciona)
+=> 
+    (assert(trastorno "no presenta comportamientos típicos de niños con TEA"))
+)
+
+(defrule regla_69
+    (comprobar mirada_perdida_3)
+    (mirada_perdida si)
+=>
+    (assert(comprobar emociones_irregulares_9))
+)
+
+(defrule regla_70
+    (comprobar mirada_perdida_3)
+    (mirada_perdida no)
+=>
+    (assert(consejo "TEA"))
+)
+
+(defrule regla_71
+    (comprobar emociones_irregulares_9)
+    (emociones irregulares)
+=>
+    (assert(trastorno "presenta comportamientos típicos de niños con TEA"))
+    (assert(derivar "PT"))
+)
+
+(defrule regla_72
+    (comprobar emociones_irregulares_9)
+    (emociones no_irregulares)
+=>
+    (assert(consejo "TEA"))
+    (assert(derivar "AL"))
+)
+
+;;;;; DERIVACIONES Y CONSEJOS ;;;;;;
 
 (defrule tipo_derivacion
     (derivar ?x)
@@ -320,11 +517,11 @@
 (defrule tipo_trastorno
     (trastorno ?x)
 =>
-    (printout t "El ninio: " ?x crlf)
+    (printout t "El niño: " ?x crlf)
 )
 
 (defrule dando_consejo
     (consejo ?x)
 =>
-    (printout t "Vijilar de un posible caso de: " ?x crlf)
+    (printout t "Vigilar de un posible caso de: " ?x crlf)
 )
