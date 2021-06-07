@@ -1,0 +1,68 @@
+TDAH COMBINADO
+-------------------------------------------------------
+Si es impulsivo,
+presta atencion,
+hace bien las tareas,
+vigilar pero no hay trastorno representativo.
+-------------------------------------------------------
+Si es impulsivo,
+presta atencion,
+hace mal las tareas,
+sigue instrucciones,
+vigilar por posible TDAH.
+-------------------------------------------------------
+Si es impulsivo,
+presta atencion,
+hace mal las tareas,
+no sigue instrucciones,
+posible TDAH.
+-------------------------------------------------------
+Si es impulsivo,
+presta atencion,
+hace mal las tareas,
+no sigue instrucciones,
+posible TDAH.
+-------------------------------------------------------
+Si es impulsivo,
+no atiende
+permanece sentado,
+vigilar por posible TDAH.
+-------------------------------------------------------
+Si es impulsivo,
+no atiende,
+permanece sentado,
+realiza las tareas sin problema,
+vigilar por posible TDAH combinado.
+-------------------------------------------------------
+Si es impulsivo,
+no atiende,
+permanece sentado,
+realiza las tareas con problema,
+posible TDAH hiperactivo
+-------------------------------------------------------
+No es impulsivo,
+presta atencion
+realiza las tareas sin problema,
+el niño no sufre ningun trastorno
+-------------------------------------------------------
+No es impulsivo,
+presta atencion
+realiza las tareas con problema,
+vigilar al niño
+-------------------------------------------------------
+No es impulsivo,
+no presta atencion,
+molesta en clase,
+realiza las tareas con problemas
+posible tdah de falta de atencion
+-------------------------------------------------------
+No es impulsivo,
+no presta atencion,
+molesta en clase,
+realiza las tareas sin problemas
+el niño no sufre ningun trastorno
+-------------------------------------------------------
+No es impulsivo,
+no presta atencion,
+no molesta en clase,
+el niño no sufre ningun trastorno. 

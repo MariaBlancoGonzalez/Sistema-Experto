@@ -1,0 +1,110 @@
+CREENCIA TEA:
+
+Si hace uso del lenguaje,
+y la flex cognitiva se encuentra alterada
+derivar a AL
+---------------------------------------------
+Si hace uso del lenguaje
+la flex cognitiva no alteraga
+no interacciona con el entorno
+mirada no perdida
+emociones irregulares
+vigilar por posibles caso de tea
+---------------------------------------------
+Si hace uso del lenguaje
+la flex cognitiva no alteraga
+no interacciona con el entorno
+mirada no perdida
+emociones no irregulares
+vigilar por posibles caso de tea
+---------------------------------------------
+Si hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+interacciona con el entorno,
+tiene la mirada perdida,
+buena reaccion a cambios rutinarios,
+derivar a AL
+---------------------------------------------
+Si hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+interacciona con el entorno,
+tiene la mirada perdida,
+mala reaccion a cambios rutinarios,
+posible caso de TEA
+---------------------------------------------
+Si hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+interacciona con el entorno,
+no tiene la mirada perdida,
+no tiene emociones irregulares,
+no presenta trastorno pero vigilar.
+---------------------------------------------
+Si hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+interacciona con el entorno,
+no tiene la mirada perdida,
+tiene emociones irregulares,
+derivar a AL.
+---------------------------------------------
+Si hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+no interacciona con el entorno,
+tiene la mirada perdida
+tiene emociones irregulares,
+presenta empatia,
+vigilar por posible caso de tea
+-----------------------------------
+Si hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+no interacciona con el entorno,
+tiene la mirada perdida
+tiene emociones irregulares,
+no presenta empatia,
+derivar a AL, no presenta TEA
+-----------------------------------
+Si hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+no interacciona con el entorno,
+tiene la mirada perdida
+no tiene emociones irregulares,
+el niño esta bien.
+-----------------------------------
+-----------------------------------
+---------------------------------------------
+Si no hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+no interacciona con el entorno,
+tiene la mirada perdida,
+y sus emociones estan alteradas,
+el niño presenta TEA y derivar a PT
+---------------------------------------------
+Si no hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+no interacciona con el entorno,
+tiene la mirada perdida,
+y sus emociones no estan alteradas,
+vigilar como posible caso de TEA.
+---------------------------------------------
+Si no hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+no interacciona con el entorno,
+no tiene la mirada perdida,
+y sus emociones estan alteradas,
+vigilar como posible caso de TEA.
+---------------------------------------------
+Si no hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+no interacciona con el entorno,
+no tiene la mirada perdida,
+y sus emociones no estan alteradas,
+vigilar como posible caso de TEA.
+---------------------------------------------
+Si no hace uso del lenguaje,
+la flex cognitiva no esta alterada,
+interacciona con el entorno,
+el niño no sufre TEA, derivar a AL.
+---------------------------------------------
+Si no hace uso del lenguaje,
+la flex cognitiva esta alterada,
+posible caso de TEA.
+---------------------------------------------
