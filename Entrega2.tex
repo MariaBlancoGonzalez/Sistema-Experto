@@ -595,51 +595,32 @@ del dominio del sistema, los atributos que los caracterizan y los posibles valor
 
 
 \begin{flushleft}
-\scalebox{0.8}{\begin{tabular}{|p{5.5cm}|p{5.6cm}|p{6.5cm}|}
+\scalebox{0.8}{\begin{tabular}{|p{3.5cm}|p{5.6cm}|p{8.5cm}|}
  \hline 
  Objeto & Atributo & Valor \\ 
  \hline 
- \multirow{19}{*}{El niño presenta} 
-  & Focalización & Si/No \\ 
-  & Atracción por el vacío & Si/No \\ 
-  & Percepción de emociones & Si/No \\ 
-  & Empatía & Si/No \\ 
-  & Balbuceo & Si/No \\ 
-  & Falta de interacción con su entorno & Si/No \\ 
-  & Aleteos & Si/No \\ 
-  & Balbaceos corporales & Si/No \\ 
-  & Mala reacción al cambio de rutina & Si/No \\
-  & Uso del lenguaje & Escaso / Normal \\
-  & Respuesta a su nombre & Si/No \\
-  & Señala & Si/No \\
-  & Enseña objetos & Si/No \\
-  & Socialización con niños de su edad & Si/No \\
-  & Hipersensibilidad a los sonidos o tacto & Si/No \\
-  & Muerden/pegan/agreden a otros niños & Si/No \\
-  & Oposición al adulto & Si/No \\
- \hline 
- \end{tabular}}
-\end{flushleft}
-\begin{flushleft}
-\scalebox{0.8}{\begin{tabular}{|p{5.5cm}|p{5.6cm}|p{6.5cm}|}
- \hline 
- Objeto & Atributo & Valor \\ 
- \hline 
- \multirow{12}{*}{Comportamiento del niño} & Comprension 4 años & Si/No \\ 
-  & Juego simbólico & Si/No \\ 
-  & Adquisición de conocimientos por edad cronológica & Si/No \\ 
-  & Etapa del renacuajo & Estancado/No estancado \\ 
-  & Retención de información & Si/No/Información básica \\ 
-  & Imitación & Imita/No imita \\ 
-  & Palabras promedio & [0 - 2000] palabras \\
-  & Motricidad gruesa & Alterada/No alterada/Algo alterada \\
-  & Resolución de problemas sencillos & Dificultad/No dificultad \\ 
-  & Ecolalia & Si/No \\ 
-  & Emociones irregulares & Si/No \\ 
- & Impulsividad & Controlada / No controlada \\
- & Atención & Atiende normal / Falta de atención \\
- & Trabajos & Terminados sin problema / Trabajos no terminados / Trabajos con 	errores graves \\
- & Concentración & Incapaz de concentrarse / Concentración normal \\
+ \multirow{6}{*}{TDAH} 
+  & Impulsivo & Impulsivo/No impulsivo \\ 
+  & Presta atención & Si/No \\ 
+  & Realización de tareas & Tareas realizadas sin problema/Tareas realizadas con problemas \\ 
+  & Instrucciones & Sigue las instrucciones/No sigue las instrucciones \\ 
+  & Permanece sentado & Si/No \\ 
+  & Molesta en clase & Si/No \\ 
+ \hline
+ \multirow{4}{*}{BORDERLINE}
+ & Lenguaje & Expresivo alterado/Expresivo y comprensivo alterado \\ 
+ & Realización de tareas & Tareas realizadas sin problema/Tareas realizadas con problemas \\
+ & Alteración psicomotriz & Si/No \\
+ & Emociones & Irregulares/No irregulares \\
+ \hline
+ \multirow{7}{*}{TEA} 
+  & Lenguaje & Utiliza el lenguaje/No hace uso del lenguaje \\ 
+  & Flexibilidad cognitiva & Alterada/No alterada \\ 
+  & Interacción con el entorno & Interacciona/No interacciona \\ 
+  & Mirada perdida & Si/No \\ 
+  & Emociones & Irregulares/No irregulares \\ 
+  & Cambios rutinario & Buena reacción/Mala reacción \\ 
+  & Empatía & Si tiene/No tiene \\
  \hline 
   \end{tabular}}
 \end{flushleft}
@@ -664,32 +645,29 @@ Para la reprensatción del conocimiento de este sistema experto se utiliza
 un razonamiento hacia delante basado en reglas, razonamiento basado en
 lógica. A continuación se indican las diferentes reglas extraidas mediante las diferentes técnicas de adquisición de conocimiento empleadas: \\
 
+Reglas asociadas con el TDAH:
 \begin{center}
 \begin{tabular}{|c|}
 \hline 
 \textbf{Regla 1} \\ 
-Si el niño no focaliza, — nf \\
-siente atracción por el vacío, — av \\
-no presenta juego simbólico, — njs \\
-sus emociones se encuentran alteradas, — ea \\
-y no presenta empatía, — ne \\ 
-Entonces el niño presenta un trastorno autista. — autista \\
+Si es impulsivo, \\
+presta atencion, \\
+hace bien las tareas, \\
+vigilar pero no hay trastorno representativo. \\
 \hline 
 \end{tabular} 
 \end{center}
+
+
 \begin{center}
 \begin{tabular}{|c|}
 \hline 
  \textbf{Regla 2:} \\
-Si el niño no comprende a la edad de 4 años, — nc \\
-no presenta juego simbólico, — njs \\
-no adquiere los conocimietos correspondientes a esa edad, — nce\\
-se encuentra estancado en la etapa del renacuajo, — er\\
-no retiene información, — nr \\
-no imita, — ni \\
-su vocabulario es menor a 2000 palabras, — mp \\
-su motricidad gruesa se encuentra alterada, — mg \\
-entonces el niño presenta deficiencia cognitiva — deficiencia\\ 
+Si es impulsivo, \\
+presta atencion, \\
+hace mal las tareas, \\
+sigue instrucciones, \\ 
+vigilar por posible TDAH. \\
 \hline 
 \end{tabular} 
 \end{center}
@@ -698,11 +676,11 @@ entonces el niño presenta deficiencia cognitiva — deficiencia\\
 \begin{tabular}{|c|}
 \hline 
 \textbf{Regla 3:} \\
-Si el niño tiene dificultad para resolver problemas sencillos, — nps\\
-su motricidad gruesa se encuentra algo alterada, — mg\\
-presenta ecolalia, — e\\
-sus emociones se encuentras algo alteradas, — ea\\
-entonces el niño presenta un trastorno borderline. — borderline \\ 
+Si es impulsivo, \\ 
+presta atencion, \\
+hace mal las tareas, \\
+no sigue instrucciones, \\
+posible TDAH. \\
 \hline 
 \end{tabular} 
 \end{center}
@@ -711,11 +689,490 @@ entonces el niño presenta un trastorno borderline. — borderline \\
 \begin{tabular}{|c|}
 \hline 
 \textbf{Regla 4:} \\
-Si el niño presenta impulsividad, — \\
-falta de atención, — \\
-trabajos no terminados o trabajos con errores graves, — \\
-es incapaz de concentrarse, — \\
-entonces el niño presenta TDAH. — TDAH \\ 
+Si es impulsivo, \\
+presta atencion, \\
+hace mal las tareas, \\
+no sigue instrucciones, \\
+posible TDAH. \\
+\hline 
+\end{tabular} 
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 5:} \\
+		Si es impulsivo, \\
+		no atiende \\
+		permanece sentado, \\
+		vigilar por posible TDAH.\\
+		\hline 
+	\end{tabular} 
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 6:} \\
+		Si es impulsivo, \\
+		no atiende, \\
+		permanece sentado, \\
+		realiza las tareas sin problema, \\
+		vigilar por posible TDAH combinado. \\
+		\hline 
+	\end{tabular} 
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 7:} \\
+		Si es impulsivo, \\
+		no atiende, \\
+		permanece sentado, \\
+		realiza las tareas con problema, \\
+		posible TDAH hiperactivo \\
+		\hline 
+	\end{tabular} 
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 8:} \\
+		No es impulsivo,\\
+		presta atencion\\
+		realiza las tareas sin problema,\\
+		el niño no sufre ningun trastorno\\
+		\hline 
+		\end{tabular} 
+\end{center}	
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 9:} \\
+		No es impulsivo,\\
+		presta atencion\\
+		realiza las tareas con problema,\\
+		vigilar al niño\\
+		\hline 
+			\end{tabular} 
+	\end{center}
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 10:} \\
+		No es impulsivo,\\
+		no presta atencion,\\
+		molesta en clase,\\
+		realiza las tareas con problemas\\
+		posible tdah de falta de atencion\\
+		\hline 
+		\end{tabular} 
+	\end{center}
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 11:} \\
+		No es impulsivo,\\
+		no presta atencion,\\
+		molesta en clase,\\
+		realiza las tareas sin problemas\\
+		el niño no sufre ningun trastorno\\
+		\hline 
+		\end{tabular} 
+	\end{center}
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 12:} \\
+		No es impulsivo,\\
+		no presta atencion,\\
+		no molesta en clase,\\
+		el niño no sufre ningun trastorno. \\
+		\hline 
+		\end{tabular} 
+	\end{center}
+Reglas asociadas con el trastorno Borderline:
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 13:} \\
+		Lenguaje expresivo alterado, \\
+		no resuelve problemas sencillos, \\
+		tiene alterada la psicomotricidad, \\
+		no tiene alteradas las emociones, \\
+		trastorno borderline. \\
+		\hline 
+	\end{tabular} 
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 14:} \\
+		Lenguaje expresivo alterado, \\
+ 		resuelve problemas sencillos, \\
+		derivar a AL \\
+		\hline 
+		\end{tabular} 
+	\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 15:} \\
+		Lenguaje expresivo alterado, \\
+		no resuelve problemas sencillos, \\
+		tiene alterada la psicomotricidad, \\
+		tiene alteradas las emociones, \\
+		trastorno borderline. \\
+		\hline 
+\end{tabular} 
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 16:} \\
+		Lenguaje expresivo alterado,\\
+		no resuelve problemas sencillos,\\
+		no tiene alterada la psicomotricidad,\\
+		tiene alteradas las emociones,\\
+		trastorno retraso madurativo.\\
+	\hline 
+\end{tabular} 
+\end{center}	
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 17:} \\
+		Lenguaje expresivo alterado,\\
+		no resuelve problemas sencillos,\\
+		no tiene alterada la psicomotricidad,\\
+		no tiene alteradas las emociones,\\
+		vigilar al niño.\\
+	\hline 
+\end{tabular} 
+\end{center}	
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 18:} \\
+		Lenguaje expresivo y compresivo alterado,\\
+		no resuelve problemas sencillos,\\
+		tiene alterada la psicomotricidad,\\
+		tiene alteradas las emociones,\\
+		trastorno borderline.\\
+	\hline 
+\end{tabular} 
+\end{center}	
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 19:} \\
+		Lenguaje expresivo y compresivo alterado,\\
+		no resuelve problemas sencillos,\\
+		tiene alterada la psicomotricidad,\\
+		no tiene alteradas las emociones,\\
+		trastorno borderline.\\
+	\hline 
+\end{tabular} 
+\end{center}	
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 20:} \\
+		Lenguaje expresivo y compresivo alterado,\\
+		no resuelve problemas sencillos,\\
+		no tiene alterada la psicomotricidad,\\
+		tiene alteradas las emociones,\\
+		trastorno borderline.\\
+	\hline 
+\end{tabular} 
+\end{center}	
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 21:} \\
+		Lenguaje expresivo y compresivo alterado,\\
+		no resuelve problemas sencillos,\\
+		no tiene alterada la psicomotricidad,\\
+		no tiene alteradas las emociones,\\
+		trastorno borderline.\\
+	\hline 
+\end{tabular} 
+\end{center}	
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 22:} \\
+		Lenguaje expresivo y compresivo alterado,\\
+		resuelve problemas sencillos,\\
+		tiene alterada la psicomotricidad,\\
+		tiene alteradas las emociones,\\
+		vigilar, muy posible trastorno.\\
+	\hline 
+\end{tabular} 
+\end{center}	
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 23:} \\
+		Lenguaje expresivo y compresivo alterado,\\
+		resuelve problemas sencillos,\\
+		tiene alterada la psicomotricidad,\\
+		no tiene alteradas las emociones,\\
+		derivar a AL. \\
+	\hline 
+\end{tabular} 
+\end{center}	
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 24:} \\
+		Lenguaje expresivo y compresivo alterado,\\
+		resuelve problemas sencillos,\\
+		no tiene alterada la psicomotricidad,\\
+		tiene alteradas las emociones,\\
+		derivar a AL.\\
+	\hline 
+\end{tabular} 
+\end{center}	
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 25:} \\
+		Lenguaje expresivo y compresivo alterado, \\
+		resuelve problemas sencillos,\\
+		no tiene alterada la psicomotricidad, \\
+		no tiene alteradas las emociones, \\
+		derivar a AL. \\
+	\hline 
+\end{tabular} 
+\end{center}	
+
+Reglas asociadas con el TEA:
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 26:} \\
+		Si hace uso del lenguaje,\\
+		y la flex cognitiva se encuentra alterada\\
+		derivar a AL\\
+	\hline 
+\end{tabular} 
+\end{center}	
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 27:} \\
+		Si hace uso del lenguaje\\
+		la flex cognitiva no alteraga\\
+		no interacciona con el entorno\\
+		mirada no perdida\\
+		emociones irregulares\\
+		vigilar por posibles caso de tea\\
+	\hline 
+\end{tabular} 
+\end{center}
+	
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 28:} \\
+		Si hace uso del lenguaje\\
+		la flex cognitiva no alteraga\\
+		no interacciona con el entorno\\
+		mirada no perdida\\
+		emociones no irregulares\\
+		vigilar por posibles caso de tea\\
+\hline 
+\end{tabular} 
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 29:} \\
+		Si hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		interacciona con el entorno,\\
+		tiene la mirada perdida,\\
+		buena reaccion a cambios rutinarios,\\
+		derivar a AL\\
+\hline 
+\end{tabular} 
+\end{center}	
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 30:} \\
+		Si hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		interacciona con el entorno,\\
+		tiene la mirada perdida,\\
+		mala reaccion a cambios rutinarios,\\
+		posible caso de TEA\\
+\hline 
+\end{tabular} 
+\end{center}
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 31:} \\
+		Si hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		interacciona con el entorno,\\
+		no tiene la mirada perdida,\\
+		no tiene emociones irregulares,\\
+		no presenta trastorno pero vigilar.\\
+\hline 
+\end{tabular} 
+\end{center}
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 32:} \\
+Si hace uso del lenguaje,\\
+la flex cognitiva no esta alterada,\\
+interacciona con el entorno,\\
+no tiene la mirada perdida,\\
+tiene emociones irregulares,\\
+derivar a AL.\\
+\hline 
+\end{tabular} 
+\end{center}
+	
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 33:} \\
+Si hace uso del lenguaje,
+la flex cognitiva no esta alterada,\\
+no interacciona con el entorno,\\
+tiene la mirada perdida\\
+tiene emociones irregulares,\\
+presenta empatia,\\
+vigilar por posible caso de tea\\
+\hline 
+\end{tabular} 
+\end{center}
+
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 34:} \\
+		Si hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		no interacciona con el entorno,\\
+		tiene la mirada perdida\\
+		tiene emociones irregulares,\\
+		no presenta empatia,\\
+		derivar a AL, no presenta TEA\\
+\hline 
+\end{tabular} 
+\end{center}
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 35:} \\
+		Si hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		no interacciona con el entorno,\\
+		tiene la mirada perdida\\
+		no tiene emociones irregulares,\\
+		el niño esta bien.\\
+\hline 
+\end{tabular} 
+\end{center}
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 36:} \\
+		Si no hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		no interacciona con el entorno,\\
+		tiene la mirada perdida,\\
+		y sus emociones estan alteradas,\\
+		el niño presenta TEA y derivar a PT\\
+\hline 
+\end{tabular} 
+\end{center}		
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 37:} \\
+		Si no hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		no interacciona con el entorno,\\
+		tiene la mirada perdida,\\
+		y sus emociones no estan alteradas,\\
+		vigilar como posible caso de TEA.\\
+\hline 
+\end{tabular} 
+\end{center}		
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 38:} \\
+		Si no hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		no interacciona con el entorno,\\
+		no tiene la mirada perdida,\\
+		y sus emociones estan alteradas,\\
+		vigilar como posible caso de TEA.\\
+\hline 
+\end{tabular} 
+\end{center}		
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 39:} \\
+		Si no hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		no interacciona con el entorno,\\
+		no tiene la mirada perdida,\\
+		y sus emociones no estan alteradas,\\
+		vigilar como posible caso de TEA.\\
+\hline 
+\end{tabular} 
+\end{center}		
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 40:} \\
+		Si no hace uso del lenguaje,\\
+		la flex cognitiva no esta alterada,\\
+		interacciona con el entorno,\\
+		el niño no sufre TEA, derivar a AL.\\
+\hline 
+\end{tabular} 
+\end{center}		
+		
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline 
+		\textbf{Regla 41:} \\
+		Si no hace uso del lenguaje,\\
+		la flex cognitiva esta alterada,\\
+		posible caso de TEA. \\
 \hline 
 \end{tabular} 
 \end{center}
