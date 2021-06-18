@@ -17,11 +17,13 @@
 )
 
 (deftemplate probabilidadTEA
-    0 7
+    0 10
     (
-        (baja (0 1) (3 0))
-        (media (2 0) (3.5 1) (4.5 0))
-        (alta (4.5 0) (5 1) (7 1))
+        (muy_baja (0 1) (2 0))
+        (baja (1 0) (2 1) (3 0))
+        (media (2 0) (4 1) (6 0))
+        (alta (5 0) (6 1) (7 1) (8 0))
+        (muy_alta (7 0) (8 1) (10 1))
     )
 )
 
@@ -29,14 +31,14 @@
     (lenguaje bajo)
     (flex_cognitiva algo)
     =>
-    (assert (probabilidadTEA alta))
+    (assert (probabilidadTEA baja))
 )
 
 (defrule regla_2
     (lenguaje bajo)
     (flex_cognitiva nada)
     =>
-    (assert (probabilidadTEA media))
+    (assert (probabilidadTEA muy_baja))
 )
 
 (defrule regla_3
@@ -85,5 +87,5 @@
     (lenguaje alto)
     (flex_cognitiva alta)
     =>
-    (assert (probabilidadTEA alta))
+    (assert (probabilidadTEA muy_alta))
 )
