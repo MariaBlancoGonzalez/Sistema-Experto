@@ -26,8 +26,7 @@
 			\begin{Large}
 				\begin{center}
 					\textbf{SISTEMA DE AYUDA AL DIAGNÓSTICO DE
-TRASTORNOS DEL DESARROLLO EN
-ENTORNOS ESCOLARES}
+TRASTORNOS EN ENTORNOS ESCOLARES}
 				\end{center}
 			\end{Large}
 			\vspace*{0.3in}
@@ -42,18 +41,273 @@ ENTORNOS ESCOLARES}
 					{\normalsize Asignatura: Sistemas Basados en el Conocimiento}
 				\end{flushleft}
 				\begin{flushleft}
-					{\normalsize Autores: María Blanco González-Mohino\\} 
+					{\normalsize Autores: María Blanco González-Mohíno\\} 
 				\end{flushleft}
 				\begin{flushleft}
-					{\normalsize Fecha: 06 de Abril de 2021}
+					{\normalsize Fecha: Julio de 2021}
 				\end{flushleft}
 			\end{large}
 		\end{center}
 		\end{titlepage}
 		\tableofcontents
 		\newpage
+\section{Descripción}
+El objetivo principal este proyecto es desarrollar un mecanismo computacional capaz de identificar si un alumno/a sufre algún tipo de trastorno, este sistema estará enfocado para su uso por profesores ya que son estos quienes en la mayoría de casos advierten sobre una posible alteración.
+El sistema contendrá una serie de reglas que desembocarán en un diagnostico hacia un alumno.
 
-\section{Aquisición de conocimiento}
+\subsection{Alcance y límites}
+Este sistema distinguirá entre varios tipos de trastornos: \textit{trastornos por déficit de atención e hiperactividad, trastorno borderline, trastorno del espectro autista.}
+
+No están incluidos cualquier otro tipo de trastorno.
+
+\section{Estudio de viabilidad}
+En este apartado se va a analizar la viabilidad del proyecto para justificar su realización. Se aplicará el test de Slager, en el que se calificarán una serie de características divididas en 4 dimensiones \textbf{(Plausibilidad, Justificación, Adecuación,
+	Éxito).} Cada tarea/característica especificada puede ser esencial o deseable, a cada una de las características se le asignará un valor y un peso, el valor de las características esenciales no puede ser menor a 7, de otro modo el sistema no sería viable. Según su importancia relativa, el peso de cada característica está entre 0 y 10.
+\subsection{Evaluación de la aplicación candidata}
+Cada una de estas dimensiones se definirá, se le asignarán pesos a cada característica y se evaluará cada dimensión en cada respectivo subapartado.
+A continuación se presenta una tabla a modo de leyenda para el entendimiento de cada tabla perteneciente a la aplicación candidata.
+
+\begin{tabular}{|c|c|c|}
+	\hline 
+	Identificador & Significado & Rango \\ 
+	\hline
+	CAT & Categoría & ----- \\ 
+	\hline 
+	EX & Expertos & • \\ 
+	\hline 
+	TA & Tarea & • \\ 
+	\hline 
+	DU & Directivos o usuarios & • \\ 
+	\hline 
+	E & Esencial & • \\ 
+	\hline 
+	D & Deseable & • \\ 
+	\hline 
+	Pi & Característica de la dimensión de \textbf{Plausibilidad} & P1 ... P10 \\ 
+	\hline 
+	jI & Característica de la dimensión de Justificación & J1 ... J7 \\ 
+	\hline 
+	Ai & Característica de la dimensión de Adecuación & A1 ... A12 \\ 
+	\hline 
+	Ei & Característica de la dimensión de Éxito & E1 ... E17 \\ 
+	\hline 
+\end{tabular} \\
+
+Tabla para el entendimiento de la evaluación: \\
+
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline 
+		Identificador & Significado \\ 
+		\hline 
+		CV & Valor global de una aplicación según la dimensión \\ 
+		\hline 
+		Vu & Valor umbral del sistema \\ 
+		\hline 
+		Vp & Valor de una característica según la dimensión \\ 
+		\hline 
+		Pp & Peso de la característica según la dimensión \\ 
+		\hline 
+		Vp & Valor de una característica según la dimensión \\ 
+		\hline 
+	\end{tabular} \\
+\end{center}
+\newpage
+\subsubsection{Plausabilidad}
+Primera dimensión, un sistema es plausible si la tarea no requiere de sentido común y contamos con suficientes expertos con un índice de cooperatividad adecuado de modo que la tarea no nos resulte demasiado compleja. \\
+
+Obtención de valores para el cálculo de la plausibilidad: \\
+\begin{tabular}{|c|c|c|c|p{7.3 cm}|c|}
+	\hline 
+	CAT & IDEN. CAT & PESO & VALOR & DENOMINACIÓN DE LA CARACTERÍSITCA & TIPO \\ 
+	\hline 
+	EX & P1 & 10 & 8 & Existen expertos. Se tomá como expertos al profesorado del CEIP Albuera, Daimiel(Ciudad Real) & E \\ 
+	\hline 
+	EX & P2 & 10 & 9 & El experto asignado es genuino. & E \\ 
+	\hline 
+	EX & P3 & 8 & 10 & El experto es cooperativo. & D \\ 
+	\hline 
+	EX & P4 & 7 & 6 & El experto es capaz de articular sus métodos pero no categoriza. & D \\ 
+	\hline 
+	TA & P5 & 10 & 10 & Existen suficientes casos de prueba; normales, típicos, ejemplares, correosos, etc. & E \\ 
+	\hline 
+	TA & P6 & 10 & 9 & La tarea está bien estructurada y se entiende. & D \\ 
+	\hline 
+	TA & P7 & 10 & 9 & Sólo requiere habilidad cognoscitiva (no pericia física). & D \\ 
+	\hline 
+	TA & P8 & 9 & 8 & No se precisan resultados óptimos sino sólo Satisfactorios, sin comprometer el proyecto. & D \\ 
+	\hline 
+	TA & P9 & 9 & 8 & La tarea no requiere sentido común. & D \\ 
+	\hline 
+	TA & P10 & 7 & 9 & Los directivos están verdaderamente comprometidos con el proyecto. & D \\ 
+	\hline 
+\end{tabular} \\
+
+\begin{center}
+	\[
+	CV_{pl} = \prod_{i=1,2,5}(Vp_{i}//Vu_{i})[\prod_{j=1}^{10}Pp_{j}*Vp_{j}]^{1/10}
+	\]
+	$CV_{pl} = 75,965$
+\end{center}
+
+\newpage
+\subsubsection{Justificación}
+Podemos saber si está justificada la realización de un sistema por diversos
+motivos, unos cuantos de estos podría ser: el sistema estaría justificado si los conocimientos o experiencia del experto esté en peligro de pérdida, podría no estar justificado si no se recupera el coste de su realización. \\
+
+Obtención de valores para el cálculo de la justificación:
+
+
+\begin{tabular}{|c|c|c|c|p{7.3 cm}|c|}
+	\hline 
+	CAT & IDEN. CAT & PESO & VALOR & DENOMINACIÓN DE LA CARACTERÍSITCA & TIPO \\ 
+	\hline 
+	EX & J1 & 10 & 10 & El experto NO está disponible. & E \\ 
+	\hline 
+	EX & J2 & 10 & 5 & Hay escasez de experiencia humana. & D \\ 
+	\hline 
+	TA & J3 & 8 & 9 & Existe necesidad de experiencia simultánea en muchos lugares. & D \\ 
+	\hline 
+	TA & J4 & 10 & 7 & Necesidad de experiencia en entornos hostiles, penosos y/o poco gratificantes. & E \\ 
+	\hline 
+	TA & J5 & 8 & 7 & No existen soluciones alternativas admisibles & E \\ 
+	\hline 
+	DU & J6 & 7 & 4 & Se espera una alta tasa de recuperación de la inversión & D \\ 
+	\hline 
+	DU & J7 & 8 & 8 & Resuelve una tarea útil y necesaria. & E \\ 
+	\hline 
+\end{tabular} \\
+
+\begin{center}
+	\[
+	CV_{ju} = \prod_{i=1,4,5,7}(Vj_{i}//Vu_{i})[\prod_{j=1}^{7}Pj_{j}*Vj_{j}]^{1/7}
+	\]
+	$CV_{ju} = 59,135$
+\end{center}
+
+\newpage
+\subsubsection{Adecuación}
+Se analiza si el problema puede resolverse con técnicas de ingeniería del conocimiento, se analiza su naturaleza, complejidad y tipo de tarea.\\
+
+Obtención de valores para el cálculo de la adecuación: \\
+\begin{tabular}{|c|c|c|c|p{7.3 cm}|c|}
+	\hline 
+	CAT & IDEN. CAT & PESO & VALOR & DENOMINACIÓN DE LA CARACTERÍSITCA & TIPO \\ 
+	\hline 
+	EX & A1 & 5 & 6 & La experiencia del experto está poco organizada & D \\ 
+	\hline 
+	TA & A2 & 6 & 10 & Tiene valor práctico. & D \\ 
+	\hline 
+	TA & A3 & 7 & 10 & Es una tarea más táctica que estratégica. No, ya que cubre necesidades actuales. & D \\ 
+	\hline 
+	TA & A4 & 7 & 9 & La tarea da soluciones que sirvan a necesidades a largo plazo. & E \\ 
+	\hline 
+	TA & A5 & 5 & 8 & La tarea no es demasiado fácil, pero es de conocimiento intensivo, tanto propio del dominio, como de manipulación de la información. & D \\ 
+	\hline 
+	TA & A6 & 6 & 8 & Es de tamaño manejable, y/o es posible un enfoque gradual y/o, una descomposición en subtareas independientes.Se espera poder ir añadiendo diferentes trastornos si fuese necesario. & D \\ 
+	\hline 
+	EX & A7 & 7 & 10 & La transferencia de experiencia entre humanos es factible (experto a aprendiz). & E \\ 
+	\hline 
+	TA & A8 & 6 & 7 & Estaba identificada como un problema en el área y los efectos de la introducción de un SE pueden planificarse. & D \\ 
+	\hline 
+	TA & A9 & 9 & 7 & No requiere respuestas en tiempo real inmediato. No es obligatorio que el resultado sea administrado en tiempo real aunque sea deseable. & E \\ 
+	\hline 
+	TA & A10 & 9 & 10 & La tarea no requiere investigación básica. & E \\ 
+	\hline
+	TA & A11 & 5 & 9 & El experto usa básicamente razonamiento simbólico que implica factores subjetivos. & D \\ 
+	\hline 
+	TA & A12 & 5 & 8 & Es esencialmente de tipo heurístico. & D \\ 
+	\hline 
+	
+\end{tabular} \\
+
+\begin{center}
+	\[
+	CV_{ad} = \prod_{i=4,7,9,10}(Va_{i}//Vu_{i})[\prod_{j=1}^{12}Pa_{j}*Va_{j}]^{1/12}
+	\]
+	$CV_{ad} = 52,012$
+\end{center}
+
+\subsubsection{Éxito}
+Se determina si el sistema tendrá exito atendiendo a las cuestiones planteadas en la siguiente tabla.\\
+
+Obtención de valores para el cálculo del éxito:
+
+\begin{tabular}{|c|c|c|c|p{7.3 cm}|c|}
+	\hline 
+	CAT & IDEN. CAT & PESO & VALOR & DENOMINACIÓN DE LA CARACTERÍSITCA & TIPO \\ 
+	\hline 
+	EX & E1 & 8 & 10 & No se sienten amenazados por el proyecto, son capaces de sentirse intelectualmente unidos al proyecto. & D \\ 
+	\hline 
+	EX & E2 & 6 & 10 & Tienen un brillante historial en la realización de esta tarea. & D \\ 
+	\hline 
+	EX & E3 & 5 & 8 & Hay acuerdos en lo que constituye una buena solución a la tarea. & D \\ 
+	\hline 
+	EX & E4 & 5 & 8 & La única justificación para dar un paso en la solución es la calidad de la solución final. & D \\ 
+	\hline 
+	EX & E5 & 6 & 5 & No hay un plazo de finalización estricto,ni ningún otro proyecto depende de esta tarea. & D \\ 
+	\hline 
+	TA & E6 & 7 & 10 & No está influenciada por vaivenes políticos. & E \\ 
+	\hline 
+	TA & E7 & 8 & 5 & Existen ya SS.EE. que resuelvan esa o parecidas tareas. & D \\ 
+	\hline 
+	TA & E8 & 8 & 7 & Hay cambios mínimos en los procedimientos habituales. & D \\ 
+	\hline 
+	TA & E9 & 5 & 10 & Las soluciones son explicables o interactivas. & D \\ 
+	\hline 
+\end{tabular} \\
+
+\begin{tabular}{|c|c|c|c|p{7.3 cm}|c|}
+	\hline 
+	CAT & IDEN. CAT & PESO & VALOR & DENOMINACIÓN DE LA CARACTERÍSITCA & TIPO \\ 
+	\hline 
+	EX & E10 & 7 & 9 & La tarea es de I+D de carácter práctico, pero no ambas cosas simultáneamente. & E \\ 
+	\hline 
+	EX & E11 & 6 & 10 & Están mentalizados y tienen expectativas realistas tanto en el alcance como en las limitaciones. & D \\ 
+	\hline 
+	EX & E12 & 7 & 10 & No rechazan de plano esta tecnología. & E \\ 
+	\hline 
+	EX & E13 & 6 & 9 & El sistema interactúa inteligente y amistosamente con el usuario. & D \\ 
+	\hline 
+	EX & E14 & 9 & 8 & El sistema es capaz de explicar al usuario su razonamiento. & D \\ 
+	\hline 
+	TA & E15 & 8 & 10 & La inserción del sistema se efectúa sin traumas; es decir, apenas se interfiere en la rutina cotidiana de la empresa. & D \\ 
+	\hline 
+	TA & E16 & 6 & 9 & Están comprometidos durante toda la duración del proyecto, incluso después de su implantación. & D \\ 
+	\hline 
+	TA & 17 & 8 & 9 & Se efectúa una adecuada transferencia tecnológica. & E \\ 
+	\hline 
+\end{tabular} \\
+\begin{center}
+	\[
+	CV_{ex} = \prod_{i=6,10,12,17}(Ve_{i}//Vu_{i})[\prod_{j=1}^{17}Pe_{j}*Ve_{j}]^{1/17}
+	\]
+	$CV_{ex} = 56,325$
+\end{center}
+\newpage
+\subsection{Evaluación global las dimensiones de la aplicación}
+Para la evaluación final extraemos la media de todas las aplicaciones candidatas: 
+\begin{center}
+	\[
+	CV = \sum_{i=1}^{4}VC_{i}/4
+	\]
+	$CV = 60,85925$
+	\\
+	Porcentaje de viabilidad, normalización del resultado:
+	\begin{equation}
+	\textit{Viabilidad} = \dfrac{CV*100}{CVmax} 
+	\end{equation}\\
+	
+	CVmax = 76,21125 
+	\begin{equation}
+	\textit{Viabilidad} = \dfrac{61,28775*100}{76,21125} = 79,855 %
+	\end{equation}
+	
+\end{center}
+
+El proyecto es viable.\\
+\newpage
+\section{Adquisición de conocimiento}
 	En este archivo solo se muestra la información obtenido a partir de la entrevista 1 hacia un docente del C.E.I.P Albuera (Daimiel), iteración número 1.
 	
 	\subsection{Recopilación de la primera iteración}
@@ -91,7 +345,7 @@ cognitiva y el trastorno del espectro autista}.
 	Esta elección se ha realizado debida a la amplia experiencia en el centro Albuera (12 años) cumplimentando asi el objetivo número 1, y por la amplia
 experiencia en el trabajo con niños con trastornos, objetivo número 2. \\
 
-\textbf{Planteamiento y resultado de la sesión}
+\textbf{Planteamiento de la sesión resultado de la sesión}
 Batería de preguntas y respuestas desde una visión más general a una más
 específica: \\
 Repaso del proyectó a realizar para la correcta comprensión del mismo,
@@ -251,7 +505,7 @@ diferentes comportamientos que marcan la diferencia entre trastornos.\\
 
 \subsection{Recopilación de la segunda iteración}
 \begin{flushleft}
-En esta iteración se realizó un cuestionario a 20 profesores del CEIP Albuera y CEIP Calatrava, Daimiel, Ciudad Real. La encuesta fue totalmente anonima y vía online debido al COVID-19. 
+En esta iteración se realizó un cuestionario a 20 profesores del CEIP Albuera y CEIP Calatrava, Daimiel, Ciudad Real. La encuesta fue totalmente anónima y vía online debido al COVID-19. 
 
 \end{flushleft}
 \begin{flushleft}
@@ -550,6 +804,85 @@ Si.\\
 \textit{7.- ¿Cuál sería la forma más acertada de llamar al TEA, Trastorno del espectro autista o Trastorno Generalizado del Desarrollo?} \\
 
 TEA, Trastorno del Espectro Autista, antes se encontraba incluido en el Trastorno Generalizado del Desarrollo, hoy día es un trastorno aparte.
+
+\subsection{Recopilación de la cuarta iteración}
+
+\textbf{Fecha}: 29/04/2021 \\
+\textbf{Hora}: 17:30-20:00 \\
+\textbf{Asistentes}: \\
+Psicóloga del centro vía Teams.\\
+Maria Blanco González-Mohíno. \\
+
+\textbf{Fuentes de conocimiento} \\
+Conocimientos adquiridos de las anteriores entrevistas e información recibida de la psicóloga por medio de tests y libros sobre el autismo y el trastorno de hiperactividad. \\
+
+\textbf{Objetivos} \\
+	Refinar los conocimientos adquiridos ya que podrían ser muy generales, intentar sintetizar los trastornos para la agrupación de comportamientos. \\
+	
+\textbf{Modo} \\
+Entrevista parcialmente estructurada, intentó seguirse un orden secuencial aunque a veces se volvió a temas anteriores, en general considero que se consiguió un gran avance. \\
+
+\textbf{Planteamiento de la sesión} \\
+Dividí las preguntas en tres grandes bloques, según estuviesen relacionadas con TDAH, TEA o el trastorno Borderline. \\
+\textit{Sobre TEA}: \\
+1.- ¿Considerá comportamientos representativos del TEA los siguientes? (Se enseño los comportamientos extraídos de las anteriores entrevistas)\\
+2.- Para usted,¿cuales serían los comportamientos más representativos que puede presentar un niño con TEA en la etapa de infantil?\\
+3.- Sobre la interacción con el entorno, ¿del 1 al 10 como de representativo cree que es?\\
+4.- ¿Considera la escasa empatía como algo representativo de un niño con TEA?\\
+5.- Teniendo en cuenta que en un aula no se muestran todos los comportamientos nombrados con anterioridad, ¿con cuantos comportamientos anómalos representativos del TEA consideraría usted que ese niño tiene TEA?\\
+6.- ¿Podrían los balbuceos englobarse dentro del escaso uso del lenguaje en un niño con TEA?\\
+7.- Sobre la alteración de la flexibilidad cognitiva, usted piensa que este comportamiento es más usual en niños con TEA o con trastorno Borderline?\\
+8.- ¿Considera los aleteos o balbuceos como posible comportamiento de niño con TEA; pueden ser representativos en la etapa de infantil?\\
+9.- ¿Considera la interacción con el entorno uno de los comportamientos más importantes para poder designar el TEA
+10.- ¿Considera lo mismo para las emociones?\\
+11.- Si el niño no hace uso del lenguaje y la flexibilidad cognitiva esta alterada, ¿la posibilidad de tener TEA es alta?\\
+12.- ¿Entre las emociones, la mirada perdida y la interacción con el entorno, puede ordenar del 1 al 3, siendo el 1 el mas importante y el 3 el que menos, la importancia que tendría a la hora de realizar una valoración sobre un niño?\\
+
+\textit{Sobre Borderline}: \\
+13.- ¿Considera la falta de atención un comportamiento importante para "diagnosticar" TDAH? \\
+14.- ¿Teniendo los siguientes comportamientos para gente con TDAH, quitaría alguno? \\
+15.- ¿Añadiría alguno? \\
+16.- ¿Los errores graves considera que pueden englobarse dentro de los trabajos sin terminar o viceversa? \\
+17.- Normalmente, ¿cuando se le asigna TDAH de falta de atención a un niño? \\
+18.- ¿Y de hiperactividad? \\
+19.- ¿Y combinado? \\
+
+\textit{Sobre Borderline}: \\
+20.- ¿Diferenciaría entre lenguaje expresivo y lenguaje comprensivo a la hora de diagnosticar un caso de Borderline?. \\
+21.- ¿Diría que es un factor de gran importancia en el diagnostico de este trastorno? \\
+22.- ¿La resolución de tareas simples, considera que tiene gran importancia en el diagnostico? \\
+23.- ¿También la alteración psicomotriz? \\
+24.- ¿Y las emociones? \\
+
+25.- ¿Cuando se debería deriva a un niño a AL y a PT? \\
+
+
+\textbf{Resultados de la sesión} \\
+1.- Tras la eliminación de alguno los comportamientos elegidos fueron: lenguaje, flexibilidad cognitiva, interacción con el entorno, mirada perdida, emociones, cambios rutinarios y empatía.\\
+2.- Lenguaje y flexibilidad cognitiva.\\
+3.- 6. \\
+4.- Si. \\
+5.- 2 si son el lenguaje y la flexibilidad cognitiva, el resto 3. \\
+6.- Si. \\
+7.- TEA. \\
+8.- Si, pero no son representativos en infantil. \\
+9.- Si. \\
+10.- Si. \\
+11.- Si. \\
+12.- Interacción con el entorno (+importante), mirada perdida y emociones alteradas. \\
+13.- Si, en especial en TDAH por falta de atención. \\
+14.- Quitaría la incapacidad para concentrarse. \\
+15.- Añadir que el niño no se queda sentado, y dificultad para seguir instrucciones. \\
+16.- Si. \\
+17.- Cuando un niño no presta atención y suele cometer errores en las tareas. \\
+18.- Cuando es impulsivo, no permanece sentado y suele molestar. \\
+19.- Cuando se enlazan TDAH por perdida de atención y por hiperactividad. \\
+20.- Si. \\
+21.- Si. \\
+22.- Si. \\
+23.- Si. \\
+24.- Si, aunque en menor presencia. \\
+25.- AL: Cuando presenta dificultades en el lenguaje; PT: cuando las emociones se encuentran alteradas. \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -561,19 +894,48 @@ relaciones entre ellos. En este apartado se incluirá un glosario con conceptos 
 \subsection{Glosario}
 \begin{flushleft}
 \textbf{\textit{Lista de elementos y definiciones}}
+1.- TDAH \\
+2.- TEA\\
+3.- Borderline: Termino utilizado por los expertos para definir a un niño próximo a la deficiencia.\\
+4.- Impulsividad\\
+5.- Lenguaje expresivo: Se refiere a la forma que el niño utiliza para comunicarse (oral o gestual) y se inicia desde el momento que nace con el llanto y las expresiones corporales.\\
+6.- Lenguaje comprensivo: Es la capacidad del niño para captar la información que se le brinda y se inicia desde antes del nacimiento\\
+7.- Atención\\
+8.- Flexibilidad cognitiva: La Flexibilidad Cognitiva o Flexibilidad Mental se puede definir como la capacidad que tiene nuestro cerebro para adaptar nuestra conducta y pensamiento a situaciones novedosas, cambiantes o inesperadas. \\
+9.- Empatía\\
+10.- Alteración psicomotriz: Las alteraciones de la psicomotricidad son aquellas que entorpecen o impiden llevar a cabo con precisión los movimientos.\\
+11.- Reacción a cambios rutinarios\\
+12.- Alteración de emociones\\
+13.- Escasa interacción con el entorno\\
+14.- Utilización del lenguaje\\
+15.- Mirada perdida\\
+16.- Realización de tareas\\
+17.- Molesta en clase\\
+18.- Permanecer sentado\\
+19.- Seguimiento de instrucciones\\
+20.- AL: Profesor de Audición y Lenguaje \\
+21.- PT:Terapeuta \\
 
-\textit{1 - Etapa gráfica:} se trata de las etapas universales que presentan los niños de diferentes culturas. Estas etapas son: etapa del garabateo (2-4 años), etapa pre esquemática (4-7 años), etapa esquemática (7-9 años), etapa del realismo (9 y 12 años), etapa pseudonaturalista (12-14 años). \\
-\textit{2 - Retraso psicoevolutivo: }Segun Piaget, el desarrollo psicoevolutivo son los distintos cambios por el que el niño pasa desde su nacimiento a nivel físico, cognitivo, lingüístico y socio-emocional. \\
-\textit{3 - Motricidad gruesa:} Actividades y movimientos que los niños realizan utilizando los grandes grupos musculares, involucrando las extremidades inferiores, superiores y los movimientos de la cabeza. \\
-\textit{4 - Ecolalia:} Repetición involuntaria de palabras o frases. \\
-\textit{5 - Etapa de renacuajo:} Etapa encontrada dentro de la etapa gráfica preesquemática, en la que el niño es capaz de dibujar un círculo y elementos que salen de este, siendo estos, normalmente, partes del cuerpo. \\
-\textit{6 - Borderline:} Termino utilizado por los expertos para definir a un niño próximo a la deficiencia.\\
-\textit{7 - Juego simbólico:} Actividad en la que los niños utilizan su capacidad mental para recrear un escenario. Por ejemplo: algunos niños son doctores y otros pacientes.\\
-\end{flushleft}
-\begin{flushleft}
-\textbf{\textit{Relaciones entre elementos}}\\
-6 pertenece a 1. (Etapa de renocuajo - Etapa gráfica) \\
-2 precedente a 7. (Retraso psicoevolutivo - Juego simbólico)\\
+\textbf{Relaciones entre elementos} \\
+7 pertenece a 1\\
+4 pertenece a 1\\
+5 pertenece a 3\\
+6 pertenece a 3\\
+8 pertenece a 2\\
+9 pertenece a 2\\
+10 pertenece a 3\\
+11 pertenece a 2\\
+12 pertenece a 2\\
+12 pertenece a 3\\
+13 pertenece a 2\\
+14 pertenece a 2\\
+15 pertenece a 2\\
+16 pertenece a 3\\
+17 pertenece a 1\\
+18 pertenece a 1\\
+19 pertenece a 1\\
+
+
 \end{flushleft}
 
 \begin{flushleft}
@@ -638,12 +1000,11 @@ En el mapa podemos observar como el experto le realiza pruebas de comportamiento
 			\end{figure}
 			
 \clearpage
-\subsubsection{Ontología}
 
 \section{Representación del conocimiento}
-Para la reprensatción del conocimiento de este sistema experto se utiliza
-un razonamiento hacia delante basado en reglas, razonamiento basado en
-lógica. A continuación se indican las diferentes reglas extraidas mediante las diferentes técnicas de adquisición de conocimiento empleadas: \\
+
+Para la representación del conocimiento de este sistema experto se utiliza
+un razonamiento hacia delante basado en reglas. A continuación se indican las diferentes reglas extraídas: \\
 
 Reglas asociadas con el TDAH:
 \begin{center}
@@ -651,9 +1012,9 @@ Reglas asociadas con el TDAH:
 \hline 
 \textbf{Regla 1} \\ 
 Si es impulsivo, \\
-presta atencion, \\
-hace bien las tareas, \\
-vigilar pero no hay trastorno representativo. \\
+presta atención y \\
+hace bien las tareas, entonces \\
+vigilar al niño, pero no hay trastorno representativo. \\
 \hline 
 \end{tabular} 
 \end{center}
@@ -664,9 +1025,9 @@ vigilar pero no hay trastorno representativo. \\
 \hline 
  \textbf{Regla 2:} \\
 Si es impulsivo, \\
-presta atencion, \\
-hace mal las tareas, \\
-sigue instrucciones, \\ 
+presta atención, \\
+hace mal las tareas y \\
+sigue instrucciones, entonces \\ 
 vigilar por posible TDAH. \\
 \hline 
 \end{tabular} 
@@ -677,9 +1038,9 @@ vigilar por posible TDAH. \\
 \hline 
 \textbf{Regla 3:} \\
 Si es impulsivo, \\ 
-presta atencion, \\
-hace mal las tareas, \\
-no sigue instrucciones, \\
+presta atención, \\
+hace mal las tareas y \\
+no sigue instrucciones, entonces \\
 posible TDAH. \\
 \hline 
 \end{tabular} 
@@ -690,9 +1051,9 @@ posible TDAH. \\
 \hline 
 \textbf{Regla 4:} \\
 Si es impulsivo, \\
-presta atencion, \\
-hace mal las tareas, \\
-no sigue instrucciones, \\
+presta atención, \\
+hace mal las tareas y  \\
+no sigue instrucciones, entonces \\
 posible TDAH. \\
 \hline 
 \end{tabular} 
@@ -703,8 +1064,8 @@ posible TDAH. \\
 		\hline 
 		\textbf{Regla 5:} \\
 		Si es impulsivo, \\
-		no atiende \\
-		permanece sentado, \\
+		no presta atención y\\
+		permanece sentado, entonces\\
 		vigilar por posible TDAH.\\
 		\hline 
 	\end{tabular} 
@@ -715,9 +1076,9 @@ posible TDAH. \\
 		\hline 
 		\textbf{Regla 6:} \\
 		Si es impulsivo, \\
-		no atiende, \\
-		permanece sentado, \\
-		realiza las tareas sin problema, \\
+		no presta atención, \\
+		permanece sentado y \\
+		realiza las tareas sin problema, entonces\\
 		vigilar por posible TDAH combinado. \\
 		\hline 
 	\end{tabular} 
@@ -728,10 +1089,10 @@ posible TDAH. \\
 		\hline 
 		\textbf{Regla 7:} \\
 		Si es impulsivo, \\
-		no atiende, \\
-		permanece sentado, \\
-		realiza las tareas con problema, \\
-		posible TDAH hiperactivo \\
+		no presta atención, \\
+		permanece sentado y \\
+		realiza las tareas con problema, entonces\\
+		posible TDAH hiperactivo. \\
 		\hline 
 	\end{tabular} 
 \end{center}
@@ -740,10 +1101,10 @@ posible TDAH. \\
 	\begin{tabular}{|c|}
 		\hline 
 		\textbf{Regla 8:} \\
-		No es impulsivo,\\
-		presta atencion\\
-		realiza las tareas sin problema,\\
-		el niño no sufre ningun trastorno\\
+		Si no es impulsivo,\\
+		presta atención y\\
+		realiza las tareas sin problema, entonces\\
+		no hay trastorno representativo.\\
 		\hline 
 		\end{tabular} 
 \end{center}	
@@ -752,8 +1113,8 @@ posible TDAH. \\
 		\hline 
 		\textbf{Regla 9:} \\
 		No es impulsivo,\\
-		presta atencion\\
-		realiza las tareas con problema,\\
+		presta atención y\\
+		realiza las tareas con problema, entonces\\
 		vigilar al niño\\
 		\hline 
 			\end{tabular} 
@@ -763,10 +1124,10 @@ posible TDAH. \\
 		\hline 
 		\textbf{Regla 10:} \\
 		No es impulsivo,\\
-		no presta atencion,\\
-		molesta en clase,\\
-		realiza las tareas con problemas\\
-		posible tdah de falta de atencion\\
+		no presta atención,\\
+		molesta en clase y\\
+		realiza las tareas con problemas, entonces\\
+		posible TDAH de falta de atención\\
 		\hline 
 		\end{tabular} 
 	\end{center}
@@ -775,10 +1136,10 @@ posible TDAH. \\
 		\hline 
 		\textbf{Regla 11:} \\
 		No es impulsivo,\\
-		no presta atencion,\\
-		molesta en clase,\\
-		realiza las tareas sin problemas\\
-		el niño no sufre ningun trastorno\\
+		no presta atención,\\
+		molesta en clase y\\
+		realiza las tareas sin problemas, entonces\\
+		el niño no sufre ningún trastorno\\
 		\hline 
 		\end{tabular} 
 	\end{center}
@@ -787,9 +1148,9 @@ posible TDAH. \\
 		\hline 
 		\textbf{Regla 12:} \\
 		No es impulsivo,\\
-		no presta atencion,\\
-		no molesta en clase,\\
-		el niño no sufre ningun trastorno. \\
+		no presta atención y\\
+		no molesta en clase, entonces\\
+		el niño no sufre ningún trastorno. \\
 		\hline 
 		\end{tabular} 
 	\end{center}
@@ -800,9 +1161,9 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 13:} \\
 		Lenguaje expresivo alterado, \\
 		no resuelve problemas sencillos, \\
-		tiene alterada la psicomotricidad, \\
-		no tiene alteradas las emociones, \\
-		trastorno borderline. \\
+		tiene alterada la psicomotricidad y \\
+		no tiene alteradas las emociones, entonces \\
+		posible trastorno borderline. \\
 		\hline 
 	\end{tabular} 
 \end{center}
@@ -811,8 +1172,8 @@ Reglas asociadas con el trastorno Borderline:
 	\begin{tabular}{|c|}
 		\hline 
 		\textbf{Regla 14:} \\
-		Lenguaje expresivo alterado, \\
- 		resuelve problemas sencillos, \\
+		Lenguaje expresivo alterado y\\
+ 		resuelve problemas sencillos, entonces\\
 		derivar a AL \\
 		\hline 
 		\end{tabular} 
@@ -824,8 +1185,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 15:} \\
 		Lenguaje expresivo alterado, \\
 		no resuelve problemas sencillos, \\
-		tiene alterada la psicomotricidad, \\
-		tiene alteradas las emociones, \\
+		tiene alterada la psicomotricidad y \\
+		tiene alteradas las emociones, entonces \\
 		trastorno borderline. \\
 		\hline 
 \end{tabular} 
@@ -837,8 +1198,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 16:} \\
 		Lenguaje expresivo alterado,\\
 		no resuelve problemas sencillos,\\
-		no tiene alterada la psicomotricidad,\\
-		tiene alteradas las emociones,\\
+		no tiene alterada la psicomotricidad y\\
+		tiene alteradas las emociones, entonces\\
 		trastorno retraso madurativo.\\
 	\hline 
 \end{tabular} 
@@ -849,8 +1210,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 17:} \\
 		Lenguaje expresivo alterado,\\
 		no resuelve problemas sencillos,\\
-		no tiene alterada la psicomotricidad,\\
-		no tiene alteradas las emociones,\\
+		no tiene alterada la psicomotricidad, y\\
+		no tiene alteradas las emociones, entonces\\
 		vigilar al niño.\\
 	\hline 
 \end{tabular} 
@@ -861,8 +1222,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 18:} \\
 		Lenguaje expresivo y compresivo alterado,\\
 		no resuelve problemas sencillos,\\
-		tiene alterada la psicomotricidad,\\
-		tiene alteradas las emociones,\\
+		tiene alterada la psicomotricidad, y\\
+		tiene alteradas las emociones, entonces\\
 		trastorno borderline.\\
 	\hline 
 \end{tabular} 
@@ -873,8 +1234,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 19:} \\
 		Lenguaje expresivo y compresivo alterado,\\
 		no resuelve problemas sencillos,\\
-		tiene alterada la psicomotricidad,\\
-		no tiene alteradas las emociones,\\
+		tiene alterada la psicomotricidad, y\\
+		no tiene alteradas las emociones, entonces\\
 		trastorno borderline.\\
 	\hline 
 \end{tabular} 
@@ -886,8 +1247,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 20:} \\
 		Lenguaje expresivo y compresivo alterado,\\
 		no resuelve problemas sencillos,\\
-		no tiene alterada la psicomotricidad,\\
-		tiene alteradas las emociones,\\
+		no tiene alterada la psicomotricidad, y\\
+		tiene alteradas las emociones, entonces\\
 		trastorno borderline.\\
 	\hline 
 \end{tabular} 
@@ -899,8 +1260,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 21:} \\
 		Lenguaje expresivo y compresivo alterado,\\
 		no resuelve problemas sencillos,\\
-		no tiene alterada la psicomotricidad,\\
-		no tiene alteradas las emociones,\\
+		no tiene alterada la psicomotricidad, y\\
+		no tiene alteradas las emociones, entonces\\
 		trastorno borderline.\\
 	\hline 
 \end{tabular} 
@@ -912,9 +1273,9 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 22:} \\
 		Lenguaje expresivo y compresivo alterado,\\
 		resuelve problemas sencillos,\\
-		tiene alterada la psicomotricidad,\\
-		tiene alteradas las emociones,\\
-		vigilar, muy posible trastorno.\\
+		tiene alterada la psicomotricidad, y\\
+		tiene alteradas las emociones, entonces\\
+		vigilar, muy posible trastorno borderline.\\
 	\hline 
 \end{tabular} 
 \end{center}	
@@ -925,8 +1286,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 23:} \\
 		Lenguaje expresivo y compresivo alterado,\\
 		resuelve problemas sencillos,\\
-		tiene alterada la psicomotricidad,\\
-		no tiene alteradas las emociones,\\
+		tiene alterada la psicomotricidad, y\\
+		no tiene alteradas las emociones, entonces\\
 		derivar a AL. \\
 	\hline 
 \end{tabular} 
@@ -938,8 +1299,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 24:} \\
 		Lenguaje expresivo y compresivo alterado,\\
 		resuelve problemas sencillos,\\
-		no tiene alterada la psicomotricidad,\\
-		tiene alteradas las emociones,\\
+		no tiene alterada la psicomotricidad, y\\
+		tiene alteradas las emociones, entonces\\
 		derivar a AL.\\
 	\hline 
 \end{tabular} 
@@ -951,8 +1312,8 @@ Reglas asociadas con el trastorno Borderline:
 		\textbf{Regla 25:} \\
 		Lenguaje expresivo y compresivo alterado, \\
 		resuelve problemas sencillos,\\
-		no tiene alterada la psicomotricidad, \\
-		no tiene alteradas las emociones, \\
+		no tiene alterada la psicomotricidad, y\\
+		no tiene alteradas las emociones, entonces \\
 		derivar a AL. \\
 	\hline 
 \end{tabular} 
@@ -964,7 +1325,7 @@ Reglas asociadas con el TEA:
 		\hline 
 		\textbf{Regla 26:} \\
 		Si hace uso del lenguaje,\\
-		y la flex cognitiva se encuentra alterada\\
+		y flexibilidad cognitiva se encuentra alterada, entonces\\
 		derivar a AL\\
 	\hline 
 \end{tabular} 
@@ -974,12 +1335,12 @@ Reglas asociadas con el TEA:
 	\begin{tabular}{|c|}
 		\hline 
 		\textbf{Regla 27:} \\
-		Si hace uso del lenguaje\\
-		la flex cognitiva no alteraga\\
-		no interacciona con el entorno\\
-		mirada no perdida\\
-		emociones irregulares\\
-		vigilar por posibles caso de tea\\
+		Si hace uso del lenguaje,\\
+		flexibilidad cognitiva no alterada,\\
+		no interacciona con el entorno,\\
+		mirada no perdida, y\\
+		emociones irregulares, entonces\\
+		vigilar por posibles caso de TEA.\\
 	\hline 
 \end{tabular} 
 \end{center}
@@ -988,12 +1349,12 @@ Reglas asociadas con el TEA:
 	\begin{tabular}{|c|}
 		\hline 
 		\textbf{Regla 28:} \\
-		Si hace uso del lenguaje\\
-		la flex cognitiva no alteraga\\
-		no interacciona con el entorno\\
-		mirada no perdida\\
-		emociones no irregulares\\
-		vigilar por posibles caso de tea\\
+		Si hace uso del lenguaje,\\
+		la flexibilidad cognitiva no alterada,\\
+		no interacciona con el entorno,\\
+		mirada no perdida, y\\
+		emociones no irregulares, entonces\\
+		vigilar por posibles caso de TEA\\
 \hline 
 \end{tabular} 
 \end{center}
@@ -1003,10 +1364,10 @@ Reglas asociadas con el TEA:
 		\hline 
 		\textbf{Regla 29:} \\
 		Si hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		interacciona con el entorno,\\
-		tiene la mirada perdida,\\
-		buena reaccion a cambios rutinarios,\\
+		tiene la mirada perdida, y\\
+		buena reacción a cambios rutinarios, entonces\\
 		derivar a AL\\
 \hline 
 \end{tabular} 
@@ -1017,10 +1378,10 @@ Reglas asociadas con el TEA:
 		\hline 
 		\textbf{Regla 30:} \\
 		Si hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		interacciona con el entorno,\\
-		tiene la mirada perdida,\\
-		mala reaccion a cambios rutinarios,\\
+		tiene la mirada perdida, y\\
+		mala reacción a cambios rutinarios, entonces\\
 		posible caso de TEA\\
 \hline 
 \end{tabular} 
@@ -1031,10 +1392,10 @@ Reglas asociadas con el TEA:
 		\hline 
 		\textbf{Regla 31:} \\
 		Si hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		interacciona con el entorno,\\
-		no tiene la mirada perdida,\\
-		no tiene emociones irregulares,\\
+		no tiene la mirada perdida, y\\
+		no tiene emociones irregulares, entonces\\
 		no presenta trastorno pero vigilar.\\
 \hline 
 \end{tabular} 
@@ -1059,12 +1420,12 @@ derivar a AL.\\
 		\hline 
 		\textbf{Regla 33:} \\
 Si hace uso del lenguaje,
-la flex cognitiva no esta alterada,\\
+la flexibilidad cognitiva no esta alterada,\\
 no interacciona con el entorno,\\
 tiene la mirada perdida\\
-tiene emociones irregulares,\\
-presenta empatia,\\
-vigilar por posible caso de tea\\
+tiene emociones irregulares, y\\
+presenta empatía, entonces\\
+vigilar por posible caso de TEA\\
 \hline 
 \end{tabular} 
 \end{center}
@@ -1074,12 +1435,12 @@ vigilar por posible caso de tea\\
 		\hline 
 		\textbf{Regla 34:} \\
 		Si hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		no interacciona con el entorno,\\
 		tiene la mirada perdida\\
-		tiene emociones irregulares,\\
-		no presenta empatia,\\
-		derivar a AL, no presenta TEA\\
+		tiene emociones irregulares, y\\
+		no presenta empatía, entonces\\
+		derivar a AL\\
 \hline 
 \end{tabular} 
 \end{center}
@@ -1089,11 +1450,11 @@ vigilar por posible caso de tea\\
 		\hline 
 		\textbf{Regla 35:} \\
 		Si hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		no interacciona con el entorno,\\
-		tiene la mirada perdida\\
-		no tiene emociones irregulares,\\
-		el niño esta bien.\\
+		tiene la mirada perdida, y\\
+		no tiene emociones irregulares, entonces\\
+		el niño no presenta ningún trastorno.\\
 \hline 
 \end{tabular} 
 \end{center}
@@ -1103,10 +1464,10 @@ vigilar por posible caso de tea\\
 		\hline 
 		\textbf{Regla 36:} \\
 		Si no hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		no interacciona con el entorno,\\
 		tiene la mirada perdida,\\
-		y sus emociones estan alteradas,\\
+		y sus emociones están alteradas, entonces\\
 		el niño presenta TEA y derivar a PT\\
 \hline 
 \end{tabular} 
@@ -1117,10 +1478,10 @@ vigilar por posible caso de tea\\
 		\hline 
 		\textbf{Regla 37:} \\
 		Si no hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		no interacciona con el entorno,\\
 		tiene la mirada perdida,\\
-		y sus emociones no estan alteradas,\\
+		y sus emociones no están alteradas, entonces\\
 		vigilar como posible caso de TEA.\\
 \hline 
 \end{tabular} 
@@ -1131,10 +1492,10 @@ vigilar por posible caso de tea\\
 		\hline 
 		\textbf{Regla 38:} \\
 		Si no hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		no interacciona con el entorno,\\
 		no tiene la mirada perdida,\\
-		y sus emociones estan alteradas,\\
+		y sus emociones están alteradas, entonces\\
 		vigilar como posible caso de TEA.\\
 \hline 
 \end{tabular} 
@@ -1145,10 +1506,10 @@ vigilar por posible caso de tea\\
 		\hline 
 		\textbf{Regla 39:} \\
 		Si no hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
+		la flexibilidad cognitiva no esta alterada,\\
 		no interacciona con el entorno,\\
 		no tiene la mirada perdida,\\
-		y sus emociones no estan alteradas,\\
+		y sus emociones no están alteradas, entonces\\
 		vigilar como posible caso de TEA.\\
 \hline 
 \end{tabular} 
@@ -1159,8 +1520,8 @@ vigilar por posible caso de tea\\
 		\hline 
 		\textbf{Regla 40:} \\
 		Si no hace uso del lenguaje,\\
-		la flex cognitiva no esta alterada,\\
-		interacciona con el entorno,\\
+		la flexibilidad cognitiva no esta alterada, y\\
+		interacciona con el entorno, entonces\\
 		el niño no sufre TEA, derivar a AL.\\
 \hline 
 \end{tabular} 
@@ -1170,52 +1531,164 @@ vigilar por posible caso de tea\\
 	\begin{tabular}{|c|}
 		\hline 
 		\textbf{Regla 41:} \\
-		Si no hace uso del lenguaje,\\
-		la flex cognitiva esta alterada,\\
+		Si no hace uso del lenguaje, y\\
+		la flexibilidad cognitiva esta alterada , entonces \\
 		posible caso de TEA. \\
 \hline 
 \end{tabular} 
 \end{center}
-
-Nota: a la derecha de cada comportamiento se encuentra la abreviatura que
-se empleará más adelante. \\
-
-Acto seguido podemos ver el ciclo empleado para la obtención de un
-diagnóstico así como un ejemplo utilizando las reglas pertenecientes a la correspondiente base de conocimiento: \\
-
-\begin{center}
-\begin{tabular}{|p{15cm}|}
-\hline 
-\textbf{Paso 1:} comprobamos los comportamientos que se presentan y verificamos las posibles reglas que pueden darse,teniendo en cuenta que si hay 3 comportamientos adversos por regla esta no se podrá disparar, si estas condiciones se dan en más de una regla se elegirá la primera por posición. \\
-\textbf{Paso 2:} disparamos la regla que tenga más trastornos asociados y borramos el conjunto de reglas posibles.\\
-\textbf{Paso 3:} añadimos comportamiento a la memoria de trabajo. \\
-\textbf{Paso 4:} Retornamos a paso 1 hasta que los comportamientos expresados solo puedan asociarse a una regla.\\
-\textbf{Paso 5:} seleccionar regla y acabar las iteraciones. \\ 
-\hline 
-\end{tabular} 
-\end{center}
 \newpage
-Ejemplo: \\
+\section{Relaciones borrosas}
+\begin{figure}[h!]
+	\begin{subfigure}
+		\includegraphics[width=8cm]{"Documento 6(1)_page-0001"}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}
+		\includegraphics[width=8.2cm]{"Foto_page-0001"}
+	\end{subfigure}
+\end{figure}
+\newpage
+\section{Control borroso}
+Conjuntos borrosos, se ha utilizado la regla nombrada anteriormente para la creación de este ejemplo.
 
-\begin{tabular}{|c|p{5.5cm}|c|c|}
-\hline 
-Iteración & Memoria de trabajo & Reglas posibles & Regla disparada \\ 
-\hline 
-0 & njs, ea, e & 1,2,3 & 1 \\ 
-\hline 
-1 & njs, ea, e, mg & 1,2,3 & 1 \\ 
-\hline 
-2 & njs, ea, e, mg, f & 2,3 & 2 \\ 
-\hline 
-3 & njs, ea, e, mg, f, mg & 2,3 & 2 \\ 
-\hline 
-4 & njs, ea, e, mg, f, mg, nps, np & 3 & 3 \\ 
-\hline 
-5 & njs, ea, e, mg, f, mg, nps, np, \textbf{borderline} & -- & PARAR \\ 
-\hline 
-\multicolumn{4}{|p{13.3cm}|}{f: focaliza} \\ 
-\multicolumn{4}{|p{13.3cm}|}{PARAR: se para cuando no hay conjuntos que suponen un conflicto} \\ 
-\hline 
-\end{tabular} \\
-Se muestra un razonamiento hacia delante (\textit{forward}) basado en reglas.
+\begin{figure}[h!]
+	\begin{subfigure}
+		\includegraphics[width=8cm]{Lenguaje.png}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}
+		\includegraphics[width=7cm]{lengu.png}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{subfigure}
+		\includegraphics[width=7cm]{Flex.cogni.png}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}
+		\includegraphics[width=7cm]{flex.png}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{subfigure}
+		\includegraphics[width=7cm]{probabilidad.png}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}
+		\includegraphics[width=7cm]{prob.png}
+	\end{subfigure}
+\end{figure}
+ \newpage
+\subsection{Reglas construidas}
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=13.5cm]{Reglas.png}
+	\end{center}
+\end{figure}
+
+(defrule regla\_1
+(lenguaje bajo)
+(flex\_cognitiva algo)
+= \textgreater
+(assert (probabilidadTEA baja))
+)
+
+(defrule regla\_2
+(lenguaje bajo)
+(flex\_cognitiva nada)
+=\textgreater
+(assert (probabilidadTEA muy\_baja))
+)
+
+(defrule regla\_3
+(lenguaje bajo)
+(flex\_cognitiva alta)
+=\textgreater
+(assert (probabilidadTEA media))
+)
+
+(defrule regla\_4
+(lenguaje medio)
+(flex\_cognitiva nada)
+=\textgreater
+(assert (probabilidadTEA baja))
+)
+
+(defrule regla\_5
+(lenguaje medio)
+(flex\_cognitiva algo)
+=\textgreater
+(assert (probabilidadTEA media))
+)
+
+(defrule regla\_6
+(lenguaje medio)
+(flex\_cognitiva alta)
+=\textgreater
+(assert (probabilidadTEA alta))
+)
+
+(defrule regla\_7
+(lenguaje alto)
+(flex\_cognitiva nada)
+=\textgreater
+(assert (probabilidadTEA media))
+)
+
+(defrule regla\_8
+(lenguaje alto)
+(flex\_cognitiva algo)
+=\textgreater
+(assert (probabilidadTEA alta))
+)
+
+(defrule regla\_9
+(lenguaje alto)
+(flex\_cognitiva alta)
+=\textgreater
+(assert (probabilidadTEA muy\_alta))
+)
+
+\newpage
+\subsection{Ejemplo Mamdani}
+Hecho utilizado: \\
+(deffacts hecho\\
+(lenguaje (26.5 0) (26.5 1) (26.5 0))\\
+(flex\_cognitiva (4 0) (4 1) (4 0))\\
+) \\
+
+Obtención realizada a \textbf{mano}: 
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=8cm]{ProbabilidadEjemplo.png}
+	\end{center}
+\end{figure} 
+\newpage
+Obtención de resultado con \textbf{fuzzyclips}: 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{mamdani}
+\end{figure} \\
+\textbf{Deborrosificación}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{defuzzify}
+\end{figure}
+ \newpage
+\section{Conclusión}
+\textbf{Problemas encontrados} \\
+Uno de los mayores problemas que se encontraron durante la realización de este trabajo fue la gran cantidad de información, al ser un prototipo tuve que definir muy bien los limites que finalmente alcanzaría. \\
+
+Otro de los problemas que encontré fue el gran número de comportamientos por trastorno, aun así creo que el prototipo final es bastante escalable pudiendo llegar a un sistema experto mayor. La definición de estos trastornos con sus comportamientos no habría sido posible sin la dedicación de los expertos que me ayudaron en todo momento y me aportaron gran cantidad de información. \\
+
+\textbf{Utilidades encontradas} \\
+Una vez finalizado llego el turno de enseñarlo a los expertos para dar unos últimos retoques, al no ser profesionales de la informática les resulto un tanto peculiar ver un programa como nosotros estamos acostumbrados pero quedaron bastante satisfechos con el resultado y preguntaron por hacerlo aun más grande. \\
+
+\textbf{Sobre lo aprendido en la asignatura} \\
+Creo que es un proyecto bastante grande y muy entretenido de realizar, desde el punto de vista estudiantil he aprendido mucho, creo que lo más interesante fue todo lo que concierne a la lógica borrosa. Por otro lado, me ha ayudado a acercarme a otras ciencias y poder unirlas con la informática, esto ultimo me resulta muy importante ya que considero que se debería trabajar más y no individualizar la ciencia.
+
+
 \end{document}
