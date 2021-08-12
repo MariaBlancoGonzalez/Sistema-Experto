@@ -2,12 +2,14 @@
 
 En la carpeta GraficosSB se encuentran los archivos sobre gráficas para control borroso de Mamdani.
 
-En la carpeta fuzzy se encuentran los archivos de reglas y hechos correspondientes a la implementación en fuzzyclips del ejemplo erchivado en GraficosSB.
+En la carpeta fuzzy se encuentran los archivos de reglas y hechos correspondientes a la implementación en fuzzyclips del ejemplo archivado en GraficosSB.
 
 El archivo trastornos.clp es la implementación en clips de las reglas introducidas en la carpeta de reglas.
 
 La carpeta ejemplos son hechos para probar el sistema implementado en trastornos.clp
 
-Archivos .tex son los correspondientes a la documentación del sistema completo.
+Archivos totales:
+```
+25
+```
 
-Tambien se encuentra el archivo en pdf.
